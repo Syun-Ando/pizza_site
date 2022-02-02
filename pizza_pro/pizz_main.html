@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>PIZZサイト</title>
+        <link rel="stylesheet" href="../css/base.css">
+        <link rel="stylesheet" href="../css/pizz_main.css">
+    </head>
+    <body>
+    <div class="body1">
+        <header>
+            <nav>
+                <ul class="gnav-list-1">
+                    <a class="tagu">PiZapoli</a>
+                    <li>
+                        <a href="pizz_main.html">TOP<br>トップ</a>
+                    </li>
+                    <li>
+                        <a href="pizz_cart.php">ORDER<br>オーダー</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper clearfix">
+            <main class="main1">
+                <div class="main-button">
+                    <p class="select1">
+                    <form method="post" action="pizz_menu.php">
+                        <p><input type="hidden" name="cart" value="1"></p>
+                        <p><input class="btn" type="submit" name="haitatsu" value="配達"></p>
+                    </form>
+                    <!-- <a href="pizz_deli.html">配達</a> -->
+                </p>                    
+                <p class="select2">
+                    <form method="post" action="session_start.php">
+                        <p><input type="hidden" name="cart" value="2"></p>
+                        <p><input class="btn" type="submit" name="omochikaeri" value="お持ち帰り"></p>
+                    </form>
+                    <!-- <a href="pizz_menu.php">お持ち帰り</a> -->
+                </p>
+                </div>                
+                <img class="imgArea" src="../img/pizza-maingazou-1152_768.jpg" alt="メイン画像">
+            </main>
+        </div>
+        <footer class="footer">
+            <ul class="ashi-list">
+                <li class="ashi-item"><a>ABOUT ME</a></li>
+                <li class="ashi-item"><a>SITE MAP</a></li>
+                <li class="ashi-item"><a>CONTACT</a></li>
+            </ul>
+            <p class="copyright">Copyright 2021 KADAI SITE</p>
+        </footer>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+    text-align: center;
+}
+
+header{
+    background-color: black;
+    height: 65px;
+}
+
+.header-logo {
+    color: white;
+    font-size: 25px;
+    float: left;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+
+.header-nav{
+    float: right;
+}
+
+.header-nav a {
+    color: white;
+    display: block;
+    line-height: 65px;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.header-nav:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+    transition: all 0.5s;
+}
+
+.order-wrapper {
+    border-top:  3px solid rgb(121, 127, 128);
+}
+
+.order-title .fas {
+    color: rgba(231, 96, 0, 0.938);
+    font-size: 50px;
+}
+
+.fas {
+    margin-right: 10px;
+    color: rgba(231, 96, 0, 0.938);
+}
+
+.fa-user-clock {
+    color: black;
+}
+
+.fa-user-circle{
+    color: black;
+}
+
+.fa-hourglass-start{
+    color: tomato;
+}
+
+.btn {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    z-index: 10;
+    padding: 15px 25px;
+    background-color: rgba(231, 96, 0, 0.938);
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 215, 200, 0.89);
+    transition: all 0.2s;
+}
+
+span {
+    font-weight: bold;
+}
+
+footer {
+    height: 150px;
+    background-color: black;
+}
+
+.cust_ordstate {
+    font-size: 25px;
+}

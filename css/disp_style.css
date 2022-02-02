@@ -1,0 +1,156 @@
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+    text-align: center;
+}
+
+
+header{
+    background-color: black;
+    height: 65px;
+}
+
+.header-logo {
+    color: white;
+    font-size: 25px;
+    float: left;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+
+.header-nav{
+    float: right;
+}
+
+.header-nav a {
+    color: white;
+    display: block;
+    line-height: 65px;
+    padding: 0 25px;
+    text-decoration: none;
+}
+
+.header-nav:hover {
+    background-color: rgba(255, 255, 255, 0.233);
+    transition: all 0.5s;
+}
+
+
+.fas {
+    margin-right: 10px;
+    color: rgba(231, 96, 0, 0.938);
+}
+
+
+.pizza-item-wrapper{
+    display: flex;
+    justify-content:center;
+}
+
+.pizza-item {
+    margin-right: 10px;
+    border: 1px solid coral;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.cust-wrapper li {
+    margin-bottom: 5px;
+}
+
+.btn {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.order-wrapper h1 {
+    color: brown;
+    margin-bottom: 50px;
+}
+
+.order-num p {
+    font-size: 20px;
+}
+
+.state {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cust-wrapper p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    border-bottom: 1px solid saddlebrown;
+}
+
+#conf {
+    background-color: lightpink;
+    box-shadow: 0 5px rgb(167, 118, 125);
+}
+
+#conf:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+#bake {
+    background-color: lightsalmon;
+    box-shadow: 0 5px rgb(206, 129, 98);
+}
+
+#bake:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+#arrived {
+    background-color: lightseagreen;
+    box-shadow: 0 5px rgb(25, 138, 132);
+}
+
+#arrived:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+#fin {
+    background-color: lightskyblue;
+    box-shadow: 0 5px rgb(97, 149, 182);
+}
+
+#fin:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+footer {
+    height: 150px;
+    background-color: black;
+}

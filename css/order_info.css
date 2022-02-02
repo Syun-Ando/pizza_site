@@ -1,0 +1,23 @@
+.container {
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+    text-align: center;
+}
+
+.info-wrapper a {
+    display: block;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+.info-wrapper a:hover{
+    background-color: rgba(255, 248, 238, 0.466);
+}
+
+.info-wrapper button {
+    border: none;
+    background-color: papayawhip;
+    padding: 20px;
+    border-radius: 5px;
+}

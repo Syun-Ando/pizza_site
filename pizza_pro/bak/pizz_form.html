@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>PIZZサイト</title>
+        <link rel="stylesheet" href="css/pizz_form.css">
+        <link rel="stylesheet" href="css/pizz_css2.css">
+        <script src="./javascript/pizz_main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="./javascript/pizz_form.js"></script>
+    </head>
+    <body>
+    <div class="body1">
+        <header class="header">
+            <h1 class="logo1">
+                <ul class="gnav-list-1">
+                <a  class="tagu" href="pizz_main.html">PiZapoli</a>
+                <li><a href="pizz_main.html">TOP<br>トップ</a></li>
+                <li><a href="pizz_cart.html">ORDER<br>オーダー</a></li>
+                </ul>
+            </h1>
+        </header>
+        <div class="wrapper clearfix">
+            <main class="main1">
+            <form method="post" class="h-adr" action="pizz_form_check.php">
+                <div class="clearfix">
+                メールアドレス <div id="err_textbox"></div>
+                <input type="email" id="email"  name="email"><br>
+                </div>
+                お名前<br>
+                <div id="err_namebox"></div>
+                <input type="text" id="name" name="name"><br>
+                <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+                郵便番号<br>
+                <span class="p-country-name" style="display:none;">Japan</span>
+                〒<input type="text" class="p-postal-code" id="postal" name="postal" style="width: 70px" maxlength='8' ><div id="err_postal"></div><br>
+
+                住所<br>
+                <input type="text" class="p-region p-locality p-street-address p-extended-address" / name="address" style="width: 300px"><br>
+                電話番号<br>
+                <div id="err_tel"></div>
+                <input type="tel"  id="tel" maxlength='11' name="tel" style="width: 100px"><br>
+                受け取り方法<br>
+                <input type="radio" name="recive" checked="checked" value="手渡し希望">　手渡しを希望する
+                <br>
+                <input type="radio" name="recive"　value="手渡し希望しない">　手渡しを希望しません
+                <br>
+                お届け先備考<br>
+                <textarea cols="30" rows="10" placeholder="ご用件などございましたらこちらに記入をお願いします。" class="textarea" maxlength='50' name="textarea"></textarea>
+                <br>
+                <div class="button_wrapper">
+                <input type="button" onclick = "history.back()" class="button" value="戻る">
+                </div>
+                <div class="submit_wrapper">
+                <input type="submit" class="submit" value="確認">
+                </div>
+            </form>
+            </main>
+        </div>
+        <footer class="footer">
+            <ul class="ashi-list">
+                <li class="ashi-item"><a>ABOUT ME</a></li>
+                <li class="ashi-item"><a>SITE MAP</a></li>
+                <li class="ashi-item"><a>CONTACT</a></li>
+            </ul>
+            <p class="copyright">Copyright 2021 KADAI SITE</p>
+        </footer>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%;   /*基準のフォントサイズを10pxに指定*/
+}
+.body1{
+    /* 画像ファイルの指定 */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("../img/design/wood-background-g4e99d3204_1920.jpg") center / cover;    
+    background-repeat: no-repeat;/* 画像をタイル状に繰り返し表示しない */    
+    background-attachment: fixed;/* コンテンツの高さが画像の高さより大きい時、動かないように固定 */    
+    background-size: cover;/* 表示するコンテナの大きさに基づいて、背景画像を調整 */    
+    background-color: bisque;/* 背景画像が読み込まれる前に表示される背景のカラー */
+    color: white;
+    font-family: sans-serif;    /*フォントをゴシック体に指定*/
+}
+
+/* body内のheader要素 */
+a:link, a:visited, a:hover, a:active{   /*タグの下線をなくす*/
+    color: white;
+    text-decoration: none;
+}
+*{box-sizing: border-box;}
+ul.gnav-list-1{
+    background: black;
+    padding: 0 1px;
+    text-align: right;  /*ヘッダーのメニュー要素(リンク)を右端基準にする*/
+}
+ul.gnav-list-1 li{
+    display: inline-block;  /*ヘッダーのタグを横並びにする*/
+}
+ul.gnav-list-1 li a{
+    display: block;
+    padding: 1em 20px;
+    color:orange;    /*ヘッダー内の文字を白色に指定*/
+    font-size: 12px;    /*ヘッダー内のフォントの基準の大きさの指定*/
+}
+ul.gnav-list-1 li a::first-line{
+    font-size: 18px;    /*メニュー要素(リンク)のフォントの大きさの指定*/
+    font-weight: bold;
+}
+ul.gnav-list-1 li a:hover{
+    color:whitesmoke;
+}
+ul a.tagu{
+    float: left;    /*ロゴ(店名)を左端基準にする*/
+}
+ul.gnav-list-1 a.tagu{
+    font-size: 55px;    /*ロゴ(店名)のフォントサイズを指定。ロゴにする場合は削除して構わないです。*/
+}
+/* body内のwrapper(main)要素 */
+.wrapper{
+    width: 1200px;
+    margin: 40px auto 40px;
+}
+.clearfix::after{   /*画面の要素の回り込み(デザインの崩れ)を防止する*/
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ----body内部のcss要素をここから下に書く---- */
+.textarea{
+    resize: none;
+}
+::placeholder {
+    color: gainsboro;
+}
+.button {
+    background-color: rgb(0, 0, 0);
+    color:whitesmoke;
+}
+.submit {
+    background-color: rgb(230, 23, 23);
+    color:whitesmoke; 
+}
+.button_wrapper {
+    text-align: center;
+    margin-right: 300px;
+    margin-top: 10px;
+    
+}
+.submit_wrapper {
+    text-align: center;
+    margin-right: 300px;
+    margin-top: 10px;
+}
+/* ----body内部のcss要素をここから上に書く---- */
+
+/* body内のfooter要素 */
+.footer{
+    width: 100%;    /*header同様に画面幅いっぱいまで表示する*/
+    padding: 20px 0 30px;
+    background-color: black;
+    color: white;   /*footerの文字の色*/
+    position: absolute; /*footer下の余白を消す*/
+    bottom: 0;
+}
+.ashi-list{
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;  /*widthでメイン要素の表示範囲と同じにして、右に寄せる*/
+}
+.ashi-list .ashi-item{
+    display: inline-block;  /*ashi-itemを横並びにする*/
+    padding: 0 15px;
+    letter-spacing: 1px;
+}
+.ashi-list .ashi-item + .ashi-item{     /*ashi-item同士の間に縦線を入れる*/
+    border-left: 1px solid #fff;
+}
+.copyright{
+    margin-top: 30px;
+    text-align: center;
+}

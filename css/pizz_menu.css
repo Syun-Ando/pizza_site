@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+/* pizz_menu.htmlの要素 */
+.goods, .container1, .container2, .container3, .container4{
+    width: 1000px;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: left;
+    color: black;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+main.main1 .submenu p.image{
+    display: inline-block;
+    max-width: 320px;
+    max-height: 240px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.container1 .submenu, .container2 .submenu, .container3 .submenu, .container4 .submenu{
+    display: inline-flex;   /* submenu同士を横並びにする */
+}
+
+.container1 li.pizza_item1 ul{   /* ピザのホバーの設定 */
+    width: 320px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+}
+.container2 li.pizza_item2 ul{   /* サラダのホバーの設定 */
+    width: 320px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+}
+li.pizza_item3 ul{   /* ポテトのホバーの設定 */
+    width: 320px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+}
+li.pizza_item4 ul{   /* ドリンクのホバーの設定 */
+    width: 320px;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255,255,255,0.8);
+}
+.hidden{
+    display: none;
+}
+.chumon{
+    width: 160px;
+    height: 80px;
+    font-size: 30px;
+    color: white;
+    background-color: red;
+    transition: 0.2s;
+}
+.chumon:hover{
+    color: black;
+    background-color: yellow;
+}
